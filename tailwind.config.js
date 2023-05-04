@@ -7,6 +7,7 @@ module.exports = {
       height: {
         128: "128rem",
         64: "53rem",
+        82: "45rem",
       },
     },
   },

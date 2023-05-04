@@ -1,4 +1,5 @@
 import "../tailwind.css";
+import { Progress } from "@chakra-ui/react";
 
 export default function Skills() {
   return (

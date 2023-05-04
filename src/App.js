@@ -7,6 +7,7 @@ import Cookies from "./Components/Cookies";
 import GitHub from "./Components/Github";
 import Loading from "./Components/Loading";
 import Skills from "./Components/Skills";
+import { ChakraProvider } from "@chakra-ui/react";
 
 class App extends Component {
   constructor(props) {
@@ -43,16 +44,17 @@ class App extends Component {
     }
 
     return (
-      <div>
-        {this.state.showGitHub && <GitHub onClose={this.handleCloseGitHub} />}
-        <Cookies />
-        <Home />
-        <Timeline />
-        <Skills />
-        <Contact />
-
-        <Footer />
-      </div>
+      <ChakraProvider>
+        <div>
+          {this.state.showGitHub && <GitHub onClose={this.handleCloseGitHub} />}
+          <Cookies />
+          <Home />
+          <Timeline />
+          <Skills />
+          <Contact />
+          <Footer />
+        </div>
+      </ChakraProvider>
     );
   }
 }

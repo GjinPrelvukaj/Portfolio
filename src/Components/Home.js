@@ -1,6 +1,8 @@
 import "../tailwind.css";
 import React from "react";
 import userimg from "../Images/1.png";
+import { Heading, Highlight, Box, Text } from "@chakra-ui/react";
+
 export default function Home() {
   return (
     <main
@@ -44,7 +46,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <div class="relative z-20 flex items-center">
+      <div class="relative z-20 h-82 flex items-center">
         <div class="container relative flex flex-col items-center justify-between px-6 py-4 mx-auto">
           <div class="flex flex-col">
             <img src={userimg} class="mx-auto rounded-full w-28" />
@@ -52,11 +54,50 @@ export default function Home() {
               Hi, I'm Gjin
             </p>
             <h2 class="max-w-3xl py-2 mx-auto text-5xl font-bold text-center text-gray-800 md:text-6xl dark:text-white">
-              Full Stack Developer
-              <br />
-              Junior Java Developer
-              <br />
-              Software Engineer
+              <Box>
+                <Text mt="-6" fontWeight="bold">
+                  <Highlight
+                    query={["Full"]}
+                    styles={{
+                      px: "2",
+                      py: "1",
+                      color: "white",
+                      rounded: "full",
+                      bg: "black",
+                    }}
+                  >
+                    Full Stack Developer
+                  </Highlight>
+                </Text>
+                <Text fontWeight="bold" mt="2">
+                  <Highlight
+                    query={["Java"]}
+                    styles={{
+                      px: "2",
+                      py: "1",
+                      color: "white",
+                      rounded: "full",
+                      bg: "black",
+                    }}
+                  >
+                    Junior Java Developer
+                  </Highlight>
+                </Text>
+                <Text fontWeight="bold" mt="2">
+                  <Highlight
+                    query={["Engineer"]}
+                    styles={{
+                      px: "2",
+                      py: "1",
+                      color: "white",
+                      rounded: "full",
+                      bg: "black",
+                    }}
+                  >
+                    Software Engineer
+                  </Highlight>
+                </Text>
+              </Box>
             </h2>
             <div class="flex items-center justify-center ">
               <a

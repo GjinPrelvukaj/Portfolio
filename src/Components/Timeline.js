@@ -1,4 +1,12 @@
 import "../tailwind.css";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+} from "@chakra-ui/react";
 export default function Timeline() {
   return (
     <section>
@@ -45,27 +53,53 @@ export default function Timeline() {
                   <div class="order-1 w-5/12"></div>
                   <div class="order-1 w-5/12 px-1 py-4 text-right">
                     <p class="mb-3 text-base text-black-300">2018 - 2023</p>
-                    <h4 class="mb-3 font-bold text-lg md:text-2xl" id="goto">
-                      Sofware Engineer
-                    </h4>
-                    <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
-                      Started Digital School in 2018 and finished in 2023 and
-                      got cerificates as a Front End Developer , Back End
-                      Developer and Junior Java Developer.
-                    </p>
+                    <Accordion allowToggle class="-mr-8">
+                      <AccordionItem>
+                        <AccordionButton>
+                          <Box as="span" flex="1" textAlign="right">
+                            <h4 class="font-bold text-lg md:text-2xl" id="goto">
+                              Sofware Engineer
+                            </h4>
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                        <AccordionPanel pb={7}>
+                          <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
+                            Started Digital School in 2018 and finished in 2023
+                            and got cerificates as a Front End Developer , Back
+                            End Developer and Junior Java Developer.
+                          </p>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Accordion>
                   </div>
                 </div>
+
                 <div class="mb-8 flex justify-between items-center w-full right-timeline">
                   <div class="order-1 w-5/12"></div>
                   <div class="order-1  w-5/12 px-1 py-4 text-left">
                     <p class="mb-3 text-base text-black-300">
                       December 2022 - June 2021
                     </p>
-                    <h4 class="mb-3 font-bold text-lg md:text-2xl">Practice</h4>
-                    <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
-                      Started practice as a Full Stack Developer with Digital
-                      School on a project called "Stress Free Corner"
-                    </p>
+                    <Accordion allowToggle class="-ml-8">
+                      <AccordionItem>
+                        <AccordionButton>
+                          <Box as="span" flex="1" textAlign="left">
+                            <h4 class="font-bold text-lg md:text-2xl" id="goto">
+                              Sofware Engineer
+                            </h4>
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                        <AccordionPanel pb={7}>
+                          <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
+                            Started Digital School in 2018 and finished in 2023
+                            and got cerificates as a Front End Developer , Back
+                            End Developer and Junior Java Developer.
+                          </p>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Accordion>
                   </div>
                 </div>
                 <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
@@ -74,13 +108,24 @@ export default function Timeline() {
                     <p class="mb-3 text-base text-black-300">
                       August 2022 - September 2022
                     </p>
-                    <h4 class="mb-3 font-bold text-lg md:text-2xl">
-                      Teacher's Assistant
-                    </h4>
-                    <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
-                      Started as a Teacher Assistant in Digital School Summer
-                      school.
-                    </p>
+                    <Accordion allowToggle class="-mr-8">
+                      <AccordionItem>
+                        <AccordionButton>
+                          <Box as="span" flex="1" textAlign="right">
+                            <h4 class="font-bold text-lg md:text-2xl" id="goto">
+                              Teacher's Assistant
+                            </h4>
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                        <AccordionPanel pb={7}>
+                          <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
+                            Started as a Teacher Assistant in Digital School
+                            Summer school.
+                          </p>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Accordion>
                   </div>
                 </div>
 
@@ -89,13 +134,23 @@ export default function Timeline() {
 
                   <div class="order-1  w-5/12 px-1 py-4">
                     <p class="mb-3 text-base text-black-300">2023+</p>
-                    <h4 class="mb-3 font-bold  text-lg md:text-2xl text-left">
-                      More to come
-                    </h4>
-                    <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
-                      The above are my achievements , when i achieve some more
-                      they will be listed
-                    </p>
+                    <Accordion allowToggle class="-ml-8">
+                      <AccordionItem>
+                        <AccordionButton>
+                          <Box as="span" flex="1" textAlign="left">
+                            <h4 class="font-bold text-lg md:text-2xl" id="goto">
+                              Coming Soon
+                            </h4>
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                        <AccordionPanel pb={7}>
+                          <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
+                            More achievements will show up here once i get them
+                          </p>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Accordion>
                   </div>
                 </div>
               </div>
