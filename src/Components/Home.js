@@ -29,7 +29,7 @@ export default function Home() {
                 Home
               </a>
               <a href="#skills" class="flex px-6 py-2 hover:text-black">
-                Skilla
+                Skills
               </a>
               <a href="#goto" class="flex px-6 py-2 hover:text-black">
                 Timeline

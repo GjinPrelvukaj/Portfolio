@@ -86,16 +86,16 @@ export default function Timeline() {
                         <AccordionButton>
                           <Box as="span" flex="1" textAlign="left">
                             <h4 class="font-bold text-lg md:text-2xl" id="goto">
-                              Sofware Engineer
+                              Practice
                             </h4>
                           </Box>
                           <AccordionIcon />
                         </AccordionButton>
                         <AccordionPanel pb={7}>
                           <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
-                            Started Digital School in 2018 and finished in 2023
-                            and got cerificates as a Front End Developer , Back
-                            End Developer and Junior Java Developer.
+                            Started practice as a Full Stack Developer with
+                            Digital School on a project called "Stress Free
+                            Corner"
                           </p>
                         </AccordionPanel>
                       </AccordionItem>
