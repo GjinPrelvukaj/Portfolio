@@ -1,34 +1,44 @@
+# Gjin Prelvukaj's Portfolio
 
-# Portfolio
+## Introduction
 
-This project is made with React JS and Tailwind 
+Welcome to my portfolio repository! This project serves as a showcase for my skills and projects as a Full Stack Developer. Below, you'll find essential information to get started with the codebase and explore my work.
 
+## Technologies Used
 
+- **React.js:** A JavaScript library for building user interfaces.
+- **Chakra UI:** A simple, modular, and accessible component library for React.
+- **MUI UI (Material-UI):** A popular React UI framework implementing Google's Material Design.
 
+## Project Structure
 
-## Run Locally
+The repository is structured as follows:
 
-Clone the project
+- `src/`: Contains the source code for the React application.
+- `public/`: Includes public assets and the HTML template.
+- `package.json`: Lists project dependencies and scripts.
 
-```bash
-  git clone https://github.com/GjinPrelvukaj/portfolio-react
-```
+## Getting Started
 
-Go to the project directory
+1. **Clone the repository:**
 
-```bash
-  cd portfolio-react
-```
+   ```bash
+   git clone https://github.com/your-username/your-portfolio.git
+   ```
 
-Install dependencies
+2. **Navigate to the project directory**
 
-```bash
-  npm install
-```
+   ```bash
+   cd {portfolio}
+   ```
 
-Start the server
+3. **Install dependencies**
 
-```bash
-  npm start
-```
+   ```bash
+   npm install
+   ```
 
+4. **Run the development server**
+   ```bash
+   npm start
+   ```

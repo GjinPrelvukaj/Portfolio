@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 export default function Timeline() {
   return (
-    <section>
+    <section className="md:ml-0 lg:ml-50">
       <div class="bg-white text-black py-8">
         <div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
           <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
@@ -20,8 +20,7 @@ export default function Timeline() {
               My working/practice Process
             </p>
             <p class="text-sm md:text-base text-black mb-4">
-              Here is my story on how I became a Full Stack Dev and the
-              courses/schools i went through
+              Here you can see my timeline and work done
             </p>
             <a
               href="#goto"
@@ -86,7 +85,7 @@ export default function Timeline() {
                         <AccordionButton>
                           <Box as="span" flex="1" textAlign="left">
                             <h4 class="font-bold text-lg md:text-2xl" id="goto">
-                              Practice
+                              WordPress Developer
                             </h4>
                           </Box>
                           <AccordionIcon />
@@ -133,20 +132,21 @@ export default function Timeline() {
                   <div class="order-1 w-5/12"></div>
 
                   <div class="order-1  w-5/12 px-1 py-4">
-                    <p class="mb-3 text-base text-black-300">2023+</p>
+                    <p class="mb-3 text-base text-black-300">2023 - Present</p>
                     <Accordion allowToggle class="-ml-8">
                       <AccordionItem>
                         <AccordionButton>
                           <Box as="span" flex="1" textAlign="left">
                             <h4 class="font-bold text-lg md:text-2xl" id="goto">
-                              Coming Soon
+                              .NET Developer (Internship)
                             </h4>
                           </Box>
                           <AccordionIcon />
                         </AccordionButton>
                         <AccordionPanel pb={7}>
                           <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
-                            More achievements will show up here once i get them
+                            Currently in a internship program at StarLabs as a
+                            .NET Developer
                           </p>
                         </AccordionPanel>
                       </AccordionItem>
@@ -157,6 +157,7 @@ export default function Timeline() {
               <img
                 class="mx-auto -mt-36 md:-mt-36"
                 src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png"
+                alt="img"
               />
             </div>
           </div>

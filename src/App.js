@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 import Cookies from "./Components/Cookies";
 import GitHub from "./Components/Github";
 import Loading from "./Components/Loading";
-import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
 import { ChakraProvider } from "@chakra-ui/react";
 
 class App extends Component {
@@ -50,7 +50,7 @@ class App extends Component {
           <Cookies />
           <Home />
           <Timeline />
-          <Skills />
+          <Projects />
           <Contact />
           <Footer />
         </div>
